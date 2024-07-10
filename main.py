@@ -17,9 +17,9 @@ def main(args):
         args.use_cuda = False
      
     if sys.platform.startswith('darwin'):
-        detector = asone.YOLOV7_MLMODEL 
+        detector = asone.YOLOV8_MLMODEL 
     else:
-        detector = asone.YOLOV7_PYTORCH
+        detector = asone.YOLOV8_PYTORCH
     
     detect = ASOne(
         tracker=asone.BYTETRACK,
